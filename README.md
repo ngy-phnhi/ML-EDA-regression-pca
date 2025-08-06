@@ -53,7 +53,8 @@ It also demonstrates how proper data preprocessing, visualization, and model eva
 - Pandas, Numpy, Seaborn, Matplotlib  
 - Scikit-learn  
 - XGBoost  
-- Bayesian Optimization (e.g. `bayes_opt`, `optuna`)
+- Bayesian Optimization (e.g. `bayes_opt`, `optuna`)  
+- Statsmodels, Scipy
 
 ## 🙋‍♀️ Author  
 **Nguyễn Phương Nhi**  
