@@ -1,7 +1,3 @@
-from pathlib import Path
-
-# Nội dung README.md
-readme_content = """
 # 🏠 California Housing Price Prediction
 
 ## 📌 Overview  
@@ -63,9 +59,3 @@ It also demonstrates how proper data preprocessing, visualization, and model eva
 **Nguyễn Phương Nhi**  
 Final-year Data Science student at Banking University  
 🔗 [GitHub Portfolio](https://github.com/ngy-phnhi)
-"""
-
-# Ghi file README.md
-readme_path = Path("/mnt/data/README.md")
-readme_path.write_text(readme_content, encoding="utf-8")
-readme_path.name
