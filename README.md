@@ -11,30 +11,49 @@ It covers the full data science workflow, including data preprocessing, explorat
 ## 🔍 Project Workflow
 
 ### 1. **Data Preprocessing**
-- Handle missing values and outliers  
-- Feature transformation and engineering  
-- Encode categorical variables (if any)
+- Performed data cleaning, handled missing values and outliers  
+- Applied feature transformation and engineered new variables  
+- Encoded categorical variables (if any)  
+**✅ Results achieved:**  
+  - Clean dataset with no anomalies or missing values  
+  - Data ready for modeling with meaningful engineered features
 
 ### 2. **Exploratory Data Analysis (EDA)**
-- Univariate and bivariate analysis  
-- Correlation heatmaps  
-- PCA for dimensionality reduction
+- Analyzed feature distributions and correlations  
+- Visualized relationships between features and the target variable  
+- Applied PCA to explore global data patterns  
+**✅ Results achieved:**  
+  - Identified strong predictors such as `MedInc`, `Distance_to_Center`  
+  - Found that the data has non-linear characteristics  
+  - PCA indicated complex structure → insight for model selection
 
 ### 3. **Modeling**
-- Linear Regression + Assumption checks  
-- Regularization: Ridge & Lasso  
-- Machine Learning models: Random Forest, XGBoost  
-- Hyperparameter tuning with Bayesian Optimization
+- Built Linear Regression, Ridge, and Lasso models  
+- Checked regression assumptions and multicollinearity  
+- Applied non-linear models: Random Forest and XGBoost  
+- Tuned hyperparameters using Bayesian Optimization  
+**✅ Results achieved:**  
+  - Linear models had stable performance but limited explanatory power (R² ~0.59)  
+  - Ridge and Lasso didn’t significantly improve performance  
+  - XGBoost performed best with R² ≈ 0.7497
 
 ### 4. **Model Evaluation**
-- Metrics used: R², MAE, RMSE  
-- K-Fold Cross Validation  
-- Feature importance extraction
+- Used R², MAE, RMSE as evaluation metrics  
+- Applied 5-fold cross-validation for robust evaluation  
+- Analyzed feature importance for interpretability  
+**✅ Results achieved:**  
+  - XGBoost and Random Forest clearly outperformed linear models  
+  - `MedInc` identified as the most influential feature  
+  - Gained insights into which features impact house prices most
 
 ### 5. **Insights & Interpretation**
-- MedInc, location-based variables showed highest impact  
-- Linear models underperformed due to non-linear patterns  
-- XGBoost yielded best performance (R² ≈ 0.75)
+- Interpreted key variables and their influence on price  
+- Compared model generalization capabilities  
+- Reflected on modeling challenges and improvements  
+**✅ Results achieved:**  
+  - Delivered practical insight into housing price drivers  
+  - Demonstrated advantages of using non-linear models  
+  - Built foundation for future deployment or real estate analysis
 
 ## 📈 Key Results
 
@@ -53,10 +72,9 @@ It also demonstrates how proper data preprocessing, visualization, and model eva
 - Pandas, Numpy, Seaborn, Matplotlib  
 - Scikit-learn  
 - XGBoost  
-- Bayesian Optimization (e.g. `bayes_opt`, `optuna`)  
+- Bayesian Optimization (`bayes_opt`, `optuna`)  
 - Statsmodels, Scipy
 
 ## 🙋‍♀️ Author  
-**Nguyễn Phương Nhi**  
-Final-year Data Science student at Banking University  
+**Nguyễn Phương Nhi**   
 🔗 [GitHub Portfolio](https://github.com/ngy-phnhi)
